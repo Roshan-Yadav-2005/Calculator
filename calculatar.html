@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main{
+        border: 2px solid black;
+        width: 300px;
+        height: 550px;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+    }
+    .row1{
+        border: 2px solid black;
+        width: 250px;
+        height: 50px;
+        margin: 15px 22px;
+        border-radius: 15px;
+    }
+    .row{
+        border: 2px solid black;
+        width: 70px;
+        height: 65px;
+       float: left;
+       margin-left: 20px;
+       border-radius: 10px;
+       margin-top: 5px;
+      text-align:center;
+      font-size: 50px;
+      
+       
+      
+    }
+  
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="display" class="row1"></div>
+        <div class="row">C</div>
+        <div class="row" onclick="currentDisplay=currentDisplay + '1';
+        document.querySelector('#display').value = currentDisplay;">1</div>
+        <div class="row">2</div>
+        <div class="row">+</div>
+        <div class="row">3</div>
+        <div class="row">4</div>
+        <div class="row">-</div>
+        <div class="row">5</div>
+        <div class="row">6</div>
+        <div class="row">*</div>
+        <div class="row">7</div>
+        <div class="row">8</div>
+        <div class="row">/</div>
+        <div class="row">=</div>
+        <div class="row">9</div>
+        <div class="row">0</div>
+        <div class="row">.</div>
+    </div>
+    <script>
+        let currentDisplay =''
+        document.querySelector('#display').innerHTML = currentDisplay;
+    </script>
+</body>
+</html>
